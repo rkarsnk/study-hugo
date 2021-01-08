@@ -1,0 +1,41 @@
+baseURL = "https://study.rkarsnk.jp/"
+title = "Hugoのお勉強"
+author = "rkarsnk"
+defaultContentLanguage = "ja"
+languageCode = "ja-JP"
+disablePathToLower = true
+hacCJKLanguage = true
+pluralizeListTitles = false
+pygmentsUseClasses = true
+pygmentsCodefences = true
+theme = "inkblotty"
+paginate = 10
+
+summaryLength = 150
+
+[outputs]
+	page = [ "HTML" ] 
+
+[Params]
+	readmore = true
+
+[taxnomiese]
+	tag = "tags"
+
+[permalinks]
+	post = "/:section/:year/:month/:day/:filename"
+
+[filename]
+	filename = "sitemap.xml"
+
+[menu]
+	[[menu.main]]
+		identifier = "home"
+		name = "Home"
+		url = "/"
+		weight = 1
+	[[menu.main]]
+		identifier = "blog"
+		name = "投稿一覧"
+		url = "/post"
+		weight = 2
